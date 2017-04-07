@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://nodemailer.com/"
-
-    >nodemailer (v4.0.0)</a>
+    <a href="https://nodemailer.com/">nodemailer (v4.0.0)</a>
 </h1>
 <h4>Easy as cake e-mail sending from your Node.js applications</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.nodemailer">module nodemailer</a><ol>
 
@@ -92,12 +85,12 @@
 
     if (
         // provided transporter is a configuration object, not transporter plugin
-        (typeof transporter === &#x27;object&#x27; &#x26;&#x26; typeof transporter.send !== &#x27;function&#x27;) ||
+        (typeof transporter === 'object' &amp;&amp; typeof transporter.send !== 'function') ||
         // provided transporter looks like a connection url
-        (typeof transporter === &#x27;string&#x27; &#x26;&#x26; /^(smtps?|direct):/i.test(transporter))
+        (typeof transporter === 'string' &amp;&amp; /^(smtps?|direct):/i.test(transporter))
     ) {
 
-        if ((urlConfig = typeof transporter === &#x27;string&#x27; ? transporter : transporter.url)) {
+        if ((urlConfig = typeof transporter === 'string' ? transporter : transporter.url)) {
             // parse a configuration URL into configuration options
             options = shared.parseConnectionUrl(urlConfig);
         } else {
@@ -135,3 +128,4 @@
     ]
 </div>
 </div>
+</body></html>
